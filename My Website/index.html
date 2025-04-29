@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube to MP3/MP4 Downloader</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>YouTube Downloader</h1>
+      <p>Download videos from YouTube as MP3 or MP4</p>
+    </header>
+
+    <div class="download-section">
+      <input type="text" id="urlInput" placeholder="Enter YouTube URL" />
+      
+      <div class="options">
+        <label for="formatSelect">Select Format:</label>
+        <select id="formatSelect">
+          <option value="mp3">MP3</option>
+          <option value="mp4">MP4</option>
+        </select>
+      </div>
+
+      <button onclick="download()">Download</button>
+      <p id="status"></p>
+
+      <p>
+        1. Go to YouTube.com and search for a video you would like to download. Then copy the video URL from the browser address bar (youtube.com/watch?v=id).
+      </p>
+      <br>
+      <p>
+        2. Paste the video URL in our YouTube Converter, and choose your preferred download format. You can choose between MP3 or MP4.
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 YouTube Downloader</p>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
